@@ -7,7 +7,7 @@ import { Log } from "./models/log.model.js";
 const app = express()
 
 app.use(cors({
-  origin:"*",
+  origin:process.env.CORS_ORIGIN,
   credentials:true
 }))
 
